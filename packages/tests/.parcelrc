@@ -1,0 +1,30 @@
+{
+  "bundler": "@parcel/bundler-default",
+  "transformers": {
+    "*.{js,jsx,ts,tsx}": [
+      "@parcel/transformer-js"
+    ]
+  },
+  "namers": [
+    "@parcel/namer-default"
+  ],
+  "runtimes": {
+    "node": [
+      "@parcel/runtime-js"
+    ]
+  },
+  "optimizers": {
+    "*.js": [
+      "@parcel/optimizer-terser"
+    ]
+  },
+  "packagers": {
+    "*.js": "@parcel/packager-js"
+  },
+  "resolvers": [
+    "@parcel/resolver-default"
+  ],
+  "reporters": [
+    "parcel-reporter-node-runner"
+  ]
+}

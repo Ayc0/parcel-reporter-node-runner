@@ -1,0 +1,27 @@
+{
+  "name": "node-wrapper-tests",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "parcel": "^2.0.0-beta.2",
+    "parcel-reporter-node-runner": "link:packages/node-runner"
+  },
+  "targets": {
+    "main": {
+      "context": "node",
+      "includeNodeModules": false,
+      "isLibrary": true,
+      "engines": {
+        "node": ">= 12.x"
+      },
+      "outputFormat": "commonjs",
+      "sourceMap": false
+    }
+  },
+  "scripts": {
+    "start": "yarn start:base --no-hmr",
+    "start:hmr": "yarn start:base",
+    "start:base": "parcel watch ./src/index.js --target main",
+    "build": "parcel build ./src/index.js"
+  }
+}
