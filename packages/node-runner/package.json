@@ -1,15 +1,19 @@
 {
   "name": "parcel-reporter-node-runner",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Add node runner for Parcel 2",
   "source": "src/index.js",
   "main": "lib/index.js",
+  "files": [
+    "lib/*.js"
+  ],
   "repository": "git@github.com:Ayc0/parcel-reporter-node-runner.git",
   "author": "Ayc0 <ayc0.benj@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "yarn build --watch",
-    "build": "microbundle -f cjs --target node --compress --no-sourcemap"
+    "build": "microbundle -f cjs --target node --compress --no-sourcemap",
+    "prepublishOnly": "rm -rf lib && yarn build"
   },
   "dependencies": {
     "@parcel/plugin": "^2.0.0-alpha.3"
