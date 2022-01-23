@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "parcel": "^2.0.0-beta.2",
+    "parcel": "^2.2.1",
     "parcel-reporter-node-runner": "link:packages/node-runner"
   },
   "targets": {
