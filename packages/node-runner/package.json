@@ -1,6 +1,6 @@
 {
   "name": "parcel-reporter-node-runner",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Add node runner for Parcel 2",
   "source": "src/index.js",
   "main": "lib/index.js",
